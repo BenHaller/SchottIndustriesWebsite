@@ -1,0 +1,23 @@
+.banner-image {
+    position: relative;
+    height: 30em;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("InProgressBanner.png")
+}
+
+.banner-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+body {
+    background-color:rgb(81, 87, 94);
+}
