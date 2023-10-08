@@ -9,6 +9,8 @@
 }
 
 .banner-text {
+    font-family: serif;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
     position: absolute;
     top: 60%;
     left: 50%;
