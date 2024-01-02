@@ -1,25 +1,150 @@
-.banner-image {
-    position: relative;
-    height: 30em;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    background-image: url("InProgressBanner.png")
+.top-nav-item {
+    margin-right: 2em;
 }
 
-.banner-text {
-    font-family: serif;
-    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+.content-section {
+padding-top: 100px;
+}
+
+.small-icon-img {
+    width: 1em;
+    position: relative;
+}
+
+.nav-logo-img-md {
+max-width: 19em; 
+position: relative;
+left: -35px;
+display: none;
+}
+
+.nav-logo-img-sm {
+    max-width: 12em; 
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .nav-logo-img-md {
+        display: block;
+    }
+
+    .nav-logo-img-sm {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+#homepageCarousel {
+    height: auto; /* Set the maximum height for the carousel */
+    width: auto;
+    max-height: 600px;
+    overflow: hidden; /* Hide overflow to ensure consistent size */
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%;
+    object-fit: contain; /* Maintain aspect ratio and cover the container */
+    object-position: center;
+}
+
+#homepageCarousel .carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
+    z-index: 1; /* Place the overlay behind the text box */
+}
+
+#textOverlay {
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
+    z-index: 10; /* Place the text box above the carousel items */
     color: white;
-    text-align: center;
-    font-size: 40px;
 }
 
-body {
-    background-color:rgb(81, 87, 94);
+body{
+    overflow-x: hidden;
 }
+
+.icon-to-image {
+    max-width: 10rem;
+}
+
+@media (max-width: 991px) {
+    .icon-to-image {
+        width: 6rem;
+        margin: auto;
+    }
+}
+
+.card-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 42, 109, 0.7);
+    z-index: 0;
+    border-radius: 5px; /* Adjust the border-radius as needed */
+}
+
+.btn-outline-secondary {
+    color: #f66a31;
+    border-color: #f66a31;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff; /* Change text color on hover if needed */
+    background-color: #f66a31;
+    border-color: #f66a31;
+}
+
+.bg-lightgray {
+    background-color: lightgray;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    box-shadow: inset 0px 20px 20px #888, inset 0px -20px 20px #888;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  .solutions-list::before {
+    content: "\25BA \0020";
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+  }

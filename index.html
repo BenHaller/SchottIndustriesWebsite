@@ -3,27 +3,337 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Schott Industries Incorporated</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="container-fluid" style="margin: 0; padding: 0">
-      <div class="row">
-          <div class="col">
-              <div class="banner-image">
-                  <div class="banner-text">
-                      Schott Industries Inc.
-                  </div>
-                  <div class="banner-text" style="font-size:medium">
-                      <br><br><br><br><br><br><br><br><br>Contact Us: info@schottindustries.ca
-                  </div>
-              </div>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <img class="nav-logo-img-md" href="#" class="" src="Photos/FinalLogo.png">
+        <img class="nav-logo-img-sm" href="#" class="" src="Photos/FinalLogo.png">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+          <ul class="navbar-nav text-end">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Residential
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 1
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 2
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 3
+                      </a>
+                  </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Industrial
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 1
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 2
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 3
+                      </a>
+                  </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Commercial
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 1
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 2
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="#">
+                          Subpage 3
+                      </a>
+                  </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" aria-current="home page">
+                About us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" aria-current="home page">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="homepageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="textOverlay">
+          <h5 style="font-size: max(2vw, 18px); color: rgb(246,106,49, 0.6)">Your Preferred</h5>
+          <h1 style="font-size: 4.5vw;"><b>Millwrighting and Electrical Service Professionals</b></h1>
+      </div>
+      <div class="carousel-indicators" style="z-index: 3;">
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Image 1"></button>
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="1" aria-label="Image 2"></button>
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="2" aria-label="Image 3"></button>
+          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="3" aria-label="Image 4"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active" id="BannerImage1">
+            <div class="d-flex justify-content-center">
+              <img src="Photos/Banner1.webp" class="d-block w-100 align-middle" alt="Image 1">
+            </div>
+          </div>
+          <div class="carousel-item" id="BannerImage2">
+            <div class="d-flex justify-content-center">
+              <img src="Photos/Banner2.webp" class="d-block w-100" alt="Image 2">
+            </div>
+          </div>
+          <div class="carousel-item" id="BannerImage3">
+            <div class="d-flex justify-content-center">
+              <img src="Photos/Banner3.webp" class="d-block w-100" alt="Image 3">
+            </div>
+          </div>
+          <div class="carousel-item" id="BannerImage4">
+            <div class="d-flex justify-content-center">
+              <img src="Photos/Banner4.webp" class="d-block w-100" alt="Image 4">
+            </div>
           </div>
       </div>
-    </div>
-    <section class="content-section">
+  </div>
+  </div>
+    <section id="contentSection" class="content-section">
+      <div class="container">
+        <div class="row" id="primary-info-row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-7">
+              <h1 style="font-size: 3rem; font-weight: 200; color: darkslategrey;"><b>Who we are:</b></h1>
+              <h4 style="font-weight: 200;"><br>Schott Industries Incorporated is a local company providing electrical and millwrighting services to clients throughout Southwestern Ontario.
+                With a team consisting of highly skilled electricians and millwrights, we promise to deliver quality solutions to suit your needs.</h4>
+          </div>
+          <div class="col-lg-3 text-center icon-to-image">
+              <br><img class = "icon-to-image" id="tools-img" src="Photos/ToolsIcon.webp">
+          </div>
+          <div class="col-lg-1">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+      <div class="container-fluid bg-lightgray">
+        <div class="row" id="primary-info-row">
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-11">
+              <h1 style="font-size: 3rem; font-weight: 200; color: darkslategrey;" id="sectorsTitle"><b>Sectors we Serve:</b></h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="card bg-dark text-white col-sm-9 col-lg-5 ms-3 me-3 mb-3" id="residentialElectricalCard">
+            <img src="Photos/Residential.webp" class="card-img" alt="..." style="width: 100%;
+            object-fit: cover;">
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <h5 class="card-title">RESIDENTIAL ELECTRICAL</h5>
+              <p class="card-text" style="color: rgb(198, 214, 234)">Our team offers a number of residential electrical services, including panel changes and upgrades, EV charcing stations, and general renovations.</p>
+              <button class="btn btn-outline-secondary position-absolute bottom-0 start-0 mb-2 ms-2">SEE MORE</button>
+            </div>
+          </div>
+  
+          <div class="card bg-dark text-white col-sm-9 col-lg-5 ms-3 me-3 mb-3">
+            <img src="Photos/IndustrialMillwright.webp" class="card-img" alt="..." style="width: 100%;
+            object-fit: cover;">
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <h5 class="card-title">INDUSTRIAL MILLWRIGHTING</h5>
+              <p class="card-text" style="color: rgb(198, 214, 234)">Our team is experienced in maintaining, troubleshooting and servicing recycling equipment, wire tie systems and hydraulic equipment. </p>
+              <button class="btn btn-outline-secondary position-absolute bottom-0 start-0 mb-2 ms-2">SEE MORE</button>
+            </div>
+          </div>
+
+          <div class="card bg-dark text-white col-sm-9 col-lg-5 ms-3 me-3 mb-3">
+            <img src="Photos/Banner4.webp" class="card-img" alt="..." style="width: 100%;
+            object-fit: cover;">
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <h5 class="card-title ">INDUSTRIAL ELECTRICAL</h5>
+              <p class="card-text" style="color: rgb(198, 214, 234)">For your industrial needs, we provide safety circuit installation, electrical troubleshooting, and general system upgrades.</p>
+              <button class="btn btn-outline-secondary position-absolute bottom-0 start-0 mb-2 ms-2">SEE MORE</button>
+            </div>
+          </div>
+  
+          <div class="card bg-dark text-white col-sm-9 col-lg-5 ms-3 me-3 mb-3">
+            <img src="Photos/Commercial.webp" class="card-img" alt="...">
+            <div class="overlay"></div>
+            <div class="card-img-overlay">
+              <h5 class="card-title">COMMERCIAL ELECTRICAL</h5>
+              <p class="card-text" style="color: rgb(198, 214, 234)">Our services here include lighting retrofits, conduit and wire installation, and emergency system maintanence.</p>
+              <button class="btn btn-outline-secondary position-absolute bottom-0 start-0 mb-2 ms-2">SEE MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <br><br>
+        <div class="row" id="primary-info-row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-7">
+              <h1 style="font-size: 2rem; font-weight: 200; color: darkslategrey;"><b>What you can expect from us:</b></h1>
+              <h4 style="font-weight: 200; color: rgb(24, 100, 183)">
+                <ul">
+                  <li class="solutions-list">Cost effective solutions to your problems</li>
+                  <li class="solutions-list">Prompt and reliable residential electrical services</li>
+                  <li class="solutions-list">Flexible service schedules</li>
+                  <li class="solutions-list">Educated and experienced millwright and electrical technicians</li>
+                  <li class="solutions-list">In-person and over-the-phone technical support</li>
+                </ul>
+              </h4>
+          </div>
+        </div>
+      </div>
     </section>
+    <br><br>
   </body>
+  <footer class="bg-dark text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="Photos/FinalLogo.png" height="70"/>
+          </div>
+          <div class="rounded-circle bg-light shadow-1-strong d-flex flex-column align-items-center justify-content-center mb-4 mx-auto" style="width: 250px; height: 250px;">
+            <img src="Photos/ECRA-ESA-logo-color.png" height="170" alt="Logo"/>
+            <div class="mt-2" style="color: black;"><b>#7016889</b></div>
+        </div>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Quick Links</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">Residential</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">Industrial</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">Commercial</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">About us</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">SERVICING</h5>
+          <ul>
+            <li>Elmira</li>
+            <li>Kitchener</li>
+            <li>Waterloo</li>
+            <li>Cambridge</li>
+            <li>Brantford</li>
+            <li>Hamilton</li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact Us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="tel:519-465-2505" class="link-light">519 465 2505</a>
+            </li>
+            <li>
+              <a href="mailto:info@schottindustries.ca" class="link=light" style="color: white;">info@schottindustries.ca</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href="http://www.schottindustries.ca">schottindustries.ca</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 </html>
