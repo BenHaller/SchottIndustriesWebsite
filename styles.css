@@ -132,7 +132,7 @@ body{
     background-color: lightgray;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    box-shadow: inset 0px 20px 20px #888, inset 0px -20px 20px #888;
+    box-shadow: inset 0px 5px 10px #888, inset 0px -5px 10px #888;
 }
 
 li {
