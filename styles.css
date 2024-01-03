@@ -128,7 +128,7 @@ body{
 @media (max-width: 576px) {
 
     .sectorCard {
-        height: 300px;
+        height: 280px;
     }
 
     .card-img {
