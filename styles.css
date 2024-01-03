@@ -19,11 +19,11 @@ display: none;
 }
 
 .nav-logo-img-sm {
-    max-width: 12em; 
+    max-width: 17em; 
     position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .nav-logo-img-md {
         display: block;
     }
@@ -31,12 +31,20 @@ display: none;
     .nav-logo-img-sm {
         display: none;
     }
-}
 
-@media (min-width: 768px) {
     .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
         display: block;
     }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Set your desired text color */
+}
+
+#homepageNavBar {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
 }
 
 #homepageCarousel {
@@ -54,10 +62,10 @@ display: none;
 }
 
 .carousel-item img {
-    width: 100%; /* Make the image fill the container width */
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    object-fit: contain; /* Maintain aspect ratio and cover the container */
-    object-position: center;
+    object-position: center;  /* You can adjust this based on your preference */
 }
 
 #homepageCarousel .carousel-item::after {
@@ -115,6 +123,20 @@ body{
     background-color: rgba(0, 42, 109, 0.7);
     z-index: 0;
     border-radius: 5px; /* Adjust the border-radius as needed */
+}
+
+@media (max-width: 576px) {
+
+    .sectorCard {
+        height: 300px;
+    }
+
+    .card-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+    }
 }
 
 .btn-outline-secondary {
