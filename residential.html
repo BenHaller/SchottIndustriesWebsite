@@ -31,22 +31,22 @@
                   </a>
               </li>
                   <li>
-                      <a class="dropdown-item" href="residential.html">
+                      <a class="dropdown-item" href="residential.html#serviceTarget">
                           Service Changes and Upgrades
                       </a>
                   </li>
                   <li>
-                      <a class="dropdown-item" href="residential.html">
+                      <a class="dropdown-item" href="residential.html#EVTarget">
                           EV Charging Stations
                       </a>
                   </li>
                   <li>
-                      <a class="dropdown-item" href="residential.html">
+                      <a class="dropdown-item" href="residential.html#lightingTarget">
                           Lighting Retrofits
                       </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="residential.html">
+                    <a class="dropdown-item" href="residential.html#renoTarget">
                         Renovations and Rewires
                     </a>
                 </li>
@@ -63,17 +63,17 @@
                       </a>
                   </li>
                   <li>
-                      <a class="dropdown-item" href="industrialMill.html">
+                      <a class="dropdown-item" href="industrialMill.html#wireTieTarget">
                           Wire Tie Systems
                       </a>
                   </li>
                   <li>
-                      <a class="dropdown-item" href="industrialMill.html">
+                      <a class="dropdown-item" href="industrialMill.html#recyclingTarget">
                           Recycling Equipment
                       </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="industrialMill.html">
+                    <a class="dropdown-item" href="industrialMill.html#hydTroubleshootingTarget">
                         Hydraulic Troubleshooting
                     </a>
                   </li>
@@ -83,12 +83,17 @@
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="industrialElec.html">
+                    <a class="dropdown-item" href="industrialElec.html#safetyCircuitTarget">
                         Safety Circuits
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="industrialElec.html">
+                    <a class="dropdown-item" href="industrialElec.html#maintanenceTarget">
+                        General Maintanence
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="industrialElec.html#troubleshootingTarget">
                         Electrical Troubleshooting
                     </a>
                   </li>
@@ -105,17 +110,17 @@
                     </a>
                   </li>
                   <li>
-                      <a class="dropdown-item" href="commercial.html">
+                      <a class="dropdown-item" href="commercial.html#comLightingTarget">
                           Lighting Retrofits
                       </a>
                   </li>
                   <li>
-                      <a class="dropdown-item" href="commercial.html">
+                      <a class="dropdown-item" href="commercial.html#exitEmerTarget">
                           Exit and Emergency Lighting
                       </a>
                   </li>
                   <li>
-                      <a class="dropdown-item" href="commercial.html">
+                      <a class="dropdown-item" href="commercial.html#conduitTarget">
                           Conduit and Wire Installation
                       </a>
                   </li>
@@ -164,19 +169,19 @@
                     </h4>
                 </div>
                 <div class="col-lg-4 col-10">
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1">
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1" onclick="scrollToServices('serviceTarget')">
                         Service Changes and Upgrades
                     </button>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1">
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1" onclick="scrollToServices('EVTarget')">
                         EV Charging Stations
                     </button>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1">
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1" onclick="scrollToServices('lightingTarget')">
                         Lighting Retrofits
                     </button>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1">
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1" onclick="scrollToServices('renoTarget')">
                         Renovations and Rewires
                     </button>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1">
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary wide-btn mb-1" onclick="scrollToServices('generalTarget')">
                         General
                     </button>
                 </div>
@@ -208,10 +213,10 @@
             <br>
             <div class="row">
                 <div class="col mb-2">
-                    <h1>Services List:</h1>
+                    <h1>List of Services:</h1>
                 </div>
             </div>
-            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;">
+            <hr style="width: 80%; margin: auto; border: none; border-top: 3px solid #f66a31;" id="serviceTarget">
             <div class="row">
                 <div class="col-md-4 col-10 mt-3 mb-3 ms-3 me-3 ms-md-0 me-md-0">
                     <img src="photos/ResidentialBox.jpg" class="img-fluid rounded-3">
@@ -226,7 +231,7 @@
                     </h4>
                 </div>
             </div>
-            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;">
+            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;" id="EVTarget">
             <div class="row">
                 <div class="col-md-4 col-10 mt-3 mb-3 ms-3 me-3 ms-md-0 me-md-0">
                     <img src="photos/EVCharging.jpg" class="img-fluid rounded-3">
@@ -241,7 +246,7 @@
                     </h4>
                 </div>
             </div>
-            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;">
+            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;" id="lightingTarget">
             <div class="row">
                 <div class="col-md-4 col-10 mt-3 mb-3 ms-3 me-3 ms-md-0 me-md-0">
                     <img src="photos/ResidentialLighting.HEIC" class="img-fluid rounded-3">
@@ -257,7 +262,7 @@
                     </h4>
                 </div>
             </div>
-            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;">
+            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;" id="renoTarget">
             <div class="row">
                 <div class="col-md-4 col-10 mt-3 mb-3 ms-3 me-3 ms-md-0 me-md-0">
                     <img src="photos/ResidentialRenovation.jpg" class="img-fluid rounded-3">
@@ -273,7 +278,7 @@
                     </h4>
                 </div>
             </div>
-            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;">
+            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;" id="generalTarget">
             <div class="row" id="primary-info-row">
                 <div class="col-lg-1">
                     </div>
@@ -287,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <hr style="width: 66.67%; margin: auto; border: none; border-top: 3px solid #f66a31;">
+            <hr style="width: 70%; margin: auto; border: none; border-top: 3px solid #f66a31;">
             <br>
             <br>
             <div class="row" id="primary-info-row">
