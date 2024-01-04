@@ -1,0 +1,187 @@
+.top-nav-item {
+    margin-right: 2em;
+}
+
+.content-section {
+padding-top: 100px;
+}
+
+.small-icon-img {
+    width: 1em;
+    position: relative;
+}
+
+.nav-logo-img-md {
+max-width: 19em; 
+position: relative;
+left: -35px;
+display: none;
+}
+
+.nav-logo-img-sm {
+    max-width: 17em; 
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .nav-logo-img-md {
+        display: block;
+    }
+
+    .nav-logo-img-sm {
+        display: none;
+    }
+
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Set your desired text color */
+}
+
+#homepageNavBar {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.banner-container {
+    position: relative;
+    max-height: 25rem;
+    overflow: hidden;
+  }
+  
+  .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  }
+  
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+}
+
+.icon-to-image {
+    max-width: 10rem;
+}
+
+@media (max-width: 991px) {
+    .icon-to-image {
+        width: 6rem;
+        margin: auto;
+    }
+}
+
+.card-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 42, 109, 0.7);
+    z-index: 0;
+    border-radius: 5px; /* Adjust the border-radius as needed */
+}
+
+@media (max-width: 576px) {
+
+    .sectorCard {
+        height: 280px;
+    }
+
+    .card-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+    }
+}
+
+.sectorCard {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.btn-outline-primary {
+    color: #f66a31;
+    border-color: #f66a31;
+    border-radius: 0;
+    background-color: #efefef;
+}
+
+
+.btn-outline-primary:hover {
+    color: #fff; /* Change text color on hover if needed */
+    background-color: #f66a31;
+    border-color: #f66a31;
+}
+
+.wide-btn::after {
+    content: "\00BB"; /* Unicode escape sequence for ▶ followed by a space */
+    right: 0px; /* Adjust the distance from the right edge */
+    top: 50%;
+    justify-content: right;
+  }
+
+.btn-outline-secondary {
+    color: #f66a31;
+    border-color: #f66a31;
+}
+
+.btn-outline-secondary:hover {
+    color: #777; /* Change text color on hover if needed */
+    background-color: #f66a31;
+    border-color: #f66a31;
+}
+
+.bg-blue {
+    background-color: #3180ff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  .solutions-list::before {
+    content: "\25BA \0020";
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+  }
+
