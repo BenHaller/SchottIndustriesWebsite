@@ -13,7 +13,7 @@ function updateContentPadding() {
 }
 
 // Set initial padding
-document.getElementById('contentSection').style.paddingTop = 540 + 'px';
+document.getElementById('contentSection').style.paddingTop = ((document.getElementById('homepageCarousel').offsetHeight) + 40) + 'px';
 
 // Update padding on page load
 updateContentPadding();
