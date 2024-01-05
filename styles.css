@@ -64,7 +64,7 @@ display: none;
 .carousel-item img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-position: center;  /* You can adjust this based on your preference */
 }
 
