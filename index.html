@@ -11,170 +11,165 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="homepageNavBar">
-      <div class="container">
-        <img class="nav-logo-img-md" href="#" class="" src="Photos/FinalLogo.png">
-        <img class="nav-logo-img-sm" href="#" class="" src="Photos/FinalLogo.png">
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="nav">
-          <ul class="navbar-nav text-end">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="residential.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Residential
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="residential.html" style="color: white;">
-                      <b><u>Residential Electrical</u></b>
-                  </a>
-              </li>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="homepageNavBar">
+        <div class="container">
+          <img class="nav-logo-img-md" class="" src="Photos/FinalLogo.png">
+          <img class="nav-logo-img-sm" class="" src="Photos/FinalLogo.png">
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation" onclick="toggleNavbar()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav text-end">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="residential.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Residential
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                   <li>
-                      <a class="dropdown-item" href="residential.html#serviceTarget">
-                          Service Changes and Upgrades
-                      </a>
-                  </li>
-                  <li>
-                      <a class="dropdown-item" href="residential.html#EVTarget">
-                          EV Charging Stations
-                      </a>
-                  </li>
-                  <li>
-                      <a class="dropdown-item" href="residential.html#lightingTarget">
-                          Lighting Retrofits
-                      </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="residential.html#renoTarget">
-                        Renovations and Rewires
+                    <a class="dropdown-item" href="residential.html" style="color: white;">
+                        <b><u>Residential Electrical</u></b>
                     </a>
                 </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="industrialMill.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Industrial
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                  <li>
-                      <a class="dropdown-item" href="industrialMill.html" style="color: white;">
-                          <b><u>Industrial Millwrighting</u></b>
+                    <li>
+                        <a class="dropdown-item" href="residential.html#serviceTarget">
+                            Service Changes and Upgrades
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="residential.html#EVTarget">
+                            EV Charging Stations
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="residential.html#lightingTarget">
+                            Lighting Retrofits
+                        </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="residential.html#renoTarget">
+                          Renovations and Rewires
                       </a>
                   </li>
-                  <li>
-                      <a class="dropdown-item" href="industrialMill.html#wireTieTarget">
-                          Wire Tie Systems
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="industrialMill.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Industrial
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="industrialMill.html" style="color: white;">
+                            <b><u>Industrial Millwrighting</u></b>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="industrialMill.html#wireTieTarget">
+                            Wire Tie Systems
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="industrialMill.html#recyclingTarget">
+                            Recycling Equipment
+                        </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="industrialMill.html#hydTroubleshootingTarget">
+                          Hydraulic Troubleshooting
                       </a>
-                  </li>
-                  <li>
-                      <a class="dropdown-item" href="industrialMill.html#recyclingTarget">
-                          Recycling Equipment
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="industrialElec.html" style="color: white;">
+                          <b><u>Industrial Electrical</u></b>
                       </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="industrialMill.html#hydTroubleshootingTarget">
-                        Hydraulic Troubleshooting
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="industrialElec.html" style="color: white;">
-                        <b><u>Industrial Electrical</u></b>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="industrialElec.html#safetyCircuitTarget">
-                        Safety Circuits
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="industrialElec.html#maintanenceTarget">
-                        General Maintanence
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="industrialElec.html#troubleshootingTarget">
-                        Electrical Troubleshooting
-                    </a>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="commercial.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Commercial
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="commercial.html" style="color: white;">
-                        <b><u>Commercial Electrical</u></b>
-                    </a>
-                  </li>
-                  <li>
-                      <a class="dropdown-item" href="commercial.html#comLightingTarget">
-                          Lighting Retrofits
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="industrialElec.html#safetyCircuitTarget">
+                          Safety Circuits
                       </a>
-                  </li>
-                  <li>
-                      <a class="dropdown-item" href="commercial.html#exitEmerTarget">
-                          Exit and Emergency Lighting
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="industrialElec.html#maintanenceTarget">
+                          General Maintanence
                       </a>
-                  </li>
-                  <li>
-                      <a class="dropdown-item" href="commercial.html#conduitTarget">
-                          Conduit and Wire Installation
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="industrialElec.html#troubleshootingTarget">
+                          Electrical Troubleshooting
                       </a>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link" aria-current="home page">
-                About us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link" aria-current="home page">
-                Contact
-              </a>
-            </li>
-          </ul>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="commercial.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Commercial
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="commercial.html" style="color: white;">
+                          <b><u>Commercial Electrical</u></b>
+                      </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="commercial.html#comLightingTarget">
+                            Lighting Retrofits
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="commercial.html#exitEmerTarget">
+                            Exit and Emergency Lighting
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="commercial.html#conduitTarget">
+                            Conduit and Wire Installation
+                        </a>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link" aria-current="home page">
+                  About us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link" aria-current="home page">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div id="homepageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div id="textOverlay">
-          <h5 style="font-size: max(2vw, 30px); color: rgb(246,106,49, 0.6)">Your Preferred</h5>
+      </nav>
+
+        <div id="mycarousel" class="carousel carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-static-text me-2">
+            <h5 style="font-size: max(2vw, 30px); color: rgb(246,106,49, 0.6)">Your Preferred</h5>
           <h1 style="font-size: max(4.5vw, 40px);"><b>Electrical and Millwrighting Service Professionals</b></h1>
-      </div>
-      <div class="carousel-indicators" style="z-index: 3;">
-          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Image 1"></button>
-          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="1" aria-label="Image 2"></button>
-          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="2" aria-label="Image 3"></button>
-          <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="3" aria-label="Image 4"></button>
-      </div>
-      <div class="carousel-inner" role="listbox" style="width:100%; height: 500px !important;">
-          <div class="carousel-item active" id="BannerImage1" style="width: 100%; height: 100%; object-fit: cover;">
-            <div class="d-flex justify-content-center" style="width: 100%; height: 100%; object-fit: cover;">
-              <img src="Photos/Banner1.webp" class="d-block w-100 align-middle" loading="eager" alt="Image 1">
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Photos/Banner1.webp" class="d-block w-100" alt="Watch1">
+            </div>
+            <div class="carousel-item">
+              <img src="Photos/Banner2.webp" class="d-block w-100" alt="Watch2">
+            </div>
+            <div class="carousel-item">
+              <img src="Photos/IndustrialMillwright.webp" class="d-block w-100" alt="Watch3">
+            </div>
+            <div class="carousel-item">
+              <img src="Photos/Banner4.webp" class="d-block w-100" alt="Watch3">
             </div>
           </div>
-          <div class="carousel-item" id="BannerImage2" style="width: 100%; height: 100%; object-fit: cover;">
-            <div class="d-flex justify-content-center" style="width: 100%; height: 100%; object-fit: cover;">
-              <img src="Photos/Banner2.webp" class="d-block w-100" loading="eager" alt="Image 2">
-            </div>
-          </div>
-          <div class="carousel-item" id="BannerImage3" style="width: 100%; height: 100%; object-fit: cover;">
-            <div class="d-flex justify-content-center" style="width: 100%; height: 100%; object-fit: cover;">
-              <img src="Photos/Industrial.jpg" class="d-block w-100" loading="eager" alt="Image 3">
-            </div>
-          </div>
-          <div class="carousel-item" id="BannerImage4" style="width: 100%; height: 100%; object-fit: cover;">
-            <div class="d-flex justify-content-center" style="width: 100%; height: 100%; object-fit: cover;">
-              <img src="Photos/Banner4.webp" class="d-block w-100" loading="eager" alt="Image 4">
-            </div>
-          </div>
-      </div>
-  </div>
-  </div>
+        </div>
+    </header>
+
     <section id="contentSection" class="content-section">
       <div class="container">
         <div class="row" id="primary-info-row">
