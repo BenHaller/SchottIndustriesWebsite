@@ -68,16 +68,16 @@ display: none;
     object-position: center;  /* You can adjust this based on your preference */
 }
 
-#homepageCarousel .carousel-item::after {
+/* #homepageCarousel .carousel-item::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
-    z-index: 1; /* Place the overlay behind the text box */
-}
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+} */
 
 #textOverlay {
     position: absolute;
