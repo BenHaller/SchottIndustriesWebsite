@@ -73,12 +73,11 @@ body{
 }
 
 .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute; 
+    z-index: 10; 
     color: white;
-    text-align: left;
+    top: 30%;
+    left: 25%;
 }
 
 .icon-to-image {
