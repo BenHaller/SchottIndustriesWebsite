@@ -12,10 +12,10 @@ padding-top: 100px;
 }
 
 .nav-logo-img-md {
-max-width: 19em; 
-position: relative;
-left: -35px;
-display: none;
+    max-width: 19em; 
+    position: relative;
+    left: -35px;
+    display: none;
 }
 
 .nav-logo-img-sm {
@@ -76,7 +76,7 @@ body{
     position: absolute; 
     z-index: 10; 
     color: white;
-    top: 25%;
+    top: 20%;
     left: 25%;
 }
 
