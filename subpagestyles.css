@@ -76,6 +76,14 @@ body{
     position: absolute; 
     z-index: 10; 
     color: white;
+    top: 30%;
+    left: 25%;
+}
+
+.contact-banner-text {
+    position: absolute; 
+    z-index: 10; 
+    color: white;
     top: 20%;
     left: 25%;
 }
@@ -88,6 +96,10 @@ body{
     .icon-to-image {
         width: 6rem;
         margin: auto;
+    }
+
+    .about-image {
+        display: none;
     }
 }
 
